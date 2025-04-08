@@ -4,7 +4,7 @@ const Cart = ({ cart, setCart }) => {
     const [isOpen, setIsOpen] = useState(true);
 
     //TODO: 장바구니를 열고 닫는 함수를 완성하세요.
-    //setCart 함수를 사용하여 State값을 업데이트하세요.
+    //setIsOpen 함수를 사용하여 State값을 업데이트하세요.
     const toggleCart = () => {};
 
     //TODO: cart에 담긴 상품의 총 가격을 계산하세요.
