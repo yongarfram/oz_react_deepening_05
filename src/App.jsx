@@ -6,6 +6,11 @@ const App = () => {
     const [cart, setCart] = useState([]);
 
     const addToCart = (product) => {
+        if (cart.length >= 8) {
+            alert('더이상 상품을 추가할 수 없습니다.');
+            return;
+        }
+        setCart([...cart, product]);
         // TODO: 카트에 상품을 추가하는 함수를 완성하세요.
         // 상품은 배열객체로 이루어져 있습니다.
         // 카트에 상품이 8개 이상이면 alert를 띄워
